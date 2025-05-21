@@ -1,0 +1,22 @@
+.btn{
+    width: 100%;
+    border: 3px solid rgb(187, 103, 103);
+    background: none;
+    aspect-ratio: 1 / 1;
+    font-size: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-content: center;
+    padding: .5rem
+}
+.inactive{
+    opacity: .3;
+    pointer-events: none; /*helps in not showing the border when the button is disabled*/
+}
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled){ /*When clicked*/
+    background-color: rgb(239, 231, 231);
+    color: black;
+    border: none;
+}
+
